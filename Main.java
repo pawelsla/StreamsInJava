@@ -24,26 +24,23 @@ public class Main {
   };
   
   public static void main(String[] args) throws Exception {
-    //Declared sample message
-    String message = "a ab ax acjdsl a a4";
-  // System.out.print( message);
+  //Declared sample message
+   String message = "a ab ax acjdsl a a4";
+     
+  //Declared word to find in the message
+   String WordToCount = "ab";
+   WordCount wCount = new WordCount(message, WordToCount);
     
-    //Declared word to find in the message
-    String WordToCount = "ab";
-    WordCount wCount = new WordCount(message, WordToCount);
-    
-    // find the number of occurrences of a word in the declared text in the given streams
-    int count = wCount.Counter();
+  //Find the number of occurrences of a word in the declared text in the given streams
+   int count = wCount.Counter();
     
    
-     // find the number of occurrences of a word in the declared text with channels
-    
+   //Find the number of occurrences of a word in the declared text with channels
    CountByChannel channel = new CountByChannel(wCount);
       
-   int c = channel.q;
-  System.out.println("C to: " + c);
+   int c = channel.q; //quantity of occurences
      
-   /* Output compared values between two searching methods. 
+   /* Output compared between two searching methods values. 
    When output will be zero both values are equal */  
     System.out.println(Integer.compare(count, c));
 
