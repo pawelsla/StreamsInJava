@@ -80,13 +80,11 @@ public class CountByChannel {
     while (i < this.chdata.length) {
     	
      String x = String.valueOf(chdata[i]);
-     System.out.println(x);
+     
      if  (!x.contains(" ")) {
     	 
-    	 temp+=(x);
-    	 
-
- 
+    	 temp+=(x); 
+    	  
      } else {
     	 if (temp.equalsIgnoreCase(this.s)) this.q++;
     	      
