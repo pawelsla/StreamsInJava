@@ -5,12 +5,12 @@ Java classes that allow to count the occurrences declared text in the Given Stre
 
 ---
 ## WordCount class 
-This class allow to count the ocurrences of searching text in the Stream with Stream Tokenizer. There are using StreamReader class, suitable for Input with Characters Stream. In next, with **Counter** method, any word is compared to word that want to find.
+This class allows to count the ocurrences of searching text in the Stream with Stream Tokenizer. There are using StreamReader class, suitable for Input with Characters Stream. In next, with **Counter** method, any word is compared to word that want to find.
 
 
 
 ## CountByChannel class
-There are message from WordCount object is written by ByteBuffer. In next, data from ByteBuffer is transmissed to temponary file by File Channel. 
+There are message from WordCount object is written by ByteBuffer in this class. In next, data from ByteBuffer is transmissed to temponary file by File Channel. 
 Flip method set a position on zero in buffer and prepare File Channel to read operations from file to buffer. File Channel's read method overwrites any Byte Channel array elements with reading bytes from temponary file. 
 
 Class method called **readChannel** returns characters array that contains the same inputed text at the begin. 
