@@ -90,7 +90,7 @@ public class CountByChannel {
      } else {
     	 if (temp.equalsIgnoreCase(this.s)) this.q++;
     	      
-         temp = ""; // clean the elements after whitespace
+         temp = ""; // clean the elements after whitespace iteration
      }
  
      i++;
@@ -121,7 +121,6 @@ public class CountByChannel {
     }
      assertEquals(text, String.valueOf(result)); // compared declared text to text from temp file
      
-     System.out.println(result);
      return result;
      
     }
